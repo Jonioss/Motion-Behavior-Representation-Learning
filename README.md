@@ -197,6 +197,6 @@ Noisy test sets were used to extract labels through the guided-clustering pipeli
 Team 5, University of Patras (2026):
 
 - Ioannis-Dionysios Vardakastanis
-- Efstratios Gryparis (@stratis1234)
+- Efstratios Gryparis ([@stratis1234](https://github.com/stratis1234))
 - Anastasios Kanellopoulos
 - Georgios Tzormpatzakis
