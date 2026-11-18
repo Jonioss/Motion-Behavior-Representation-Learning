@@ -1,0 +1,40 @@
+Plotting Test data on UMAP space without labels...
+
+Εκτέλεση K-Means πάνω στον 2D UMAP χώρο του Train set...
+Πρόβλεψη K-Means clusters για το Test set...
+
+Υπολογισμός βέλτιστης αντιστοίχισης (Cluster Alignment) για το Test set...
+
+==================================================
+ΚΑΛΥΤΕΡΗ ΔΥΝΑΤΗ ΑΚΡΙΒΕΙΑ (Test Accuracy): 22.04%
+==================================================
+
+Βέλτιστο Mapping που βρέθηκε:
+  • K-Means Cluster 0  --->  Πραγματικό Label: Construction
+  • K-Means Cluster 1  --->  Πραγματικό Label: Unknown
+  • K-Means Cluster 2  --->  Πραγματικό Label: Cyclist
+  • K-Means Cluster 3  --->  Πραγματικό Label: Motorcyclist
+  • K-Means Cluster 4  --->  Πραγματικό Label: Vehicle
+  • K-Means Cluster 5  --->  Πραγματικό Label: Riderless Bicycle
+  • K-Means Cluster 6  --->  Πραγματικό Label: Bus
+  • K-Means Cluster 7  --->  Πραγματικό Label: Background
+  • K-Means Cluster 8  --->  Πραγματικό Label: Pedestrian
+  • K-Means Cluster 9  --->  Πραγματικό Label: Static
+
+Αναλυτικό Classification Report (aligned):
+                   precision    recall  f1-score   support
+
+          Vehicle       0.58      0.19      0.28      1342
+       Pedestrian       0.56      0.25      0.34       732
+     Construction       0.32      0.45      0.38       582
+Riderless Bicycle       0.22      0.20      0.21       606
+              Bus       0.08      0.15      0.10       278
+       Background       0.11      0.12      0.12       446
+           Static       0.16      0.17      0.16       544
+          Cyclist       0.22      0.28      0.24       312
+     Motorcyclist       0.03      0.09      0.04       127
+          Unknown       0.00      0.03      0.00        31
+
+         accuracy                           0.22      5000
+        macro avg       0.23      0.19      0.19      5000
+     weighted avg       0.35      0.22      0.25      5000

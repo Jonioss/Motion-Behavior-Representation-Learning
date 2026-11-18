@@ -1,0 +1,26 @@
+Plotting Test data on UMAP space without labels...
+
+Εκτέλεση K-Means πάνω στον 2D UMAP χώρο του Train set...
+Πρόβλεψη K-Means clusters για το Test set...
+
+Υπολογισμός βέλτιστης αντιστοίχισης (Cluster Alignment) για το Test set...
+
+==================================================
+ΚΑΛΥΤΕΡΗ ΔΥΝΑΤΗ ΑΚΡΙΒΕΙΑ (Test Accuracy): 43.44%
+==================================================
+
+Βέλτιστο Mapping που βρέθηκε:
+  • K-Means Cluster 0  --->  Πραγματικό Label: Decelerate
+  • K-Means Cluster 1  --->  Πραγματικό Label: Accelerate
+  • K-Means Cluster 2  --->  Πραγματικό Label: Constant Speed
+
+Αναλυτικό Classification Report (aligned):
+                precision    recall  f1-score   support
+
+Constant Speed       0.32      0.40      0.35      1125
+    Decelerate       0.55      0.57      0.56      2239
+    Accelerate       0.35      0.27      0.31      1636
+
+      accuracy                           0.43      5000
+     macro avg       0.41      0.41      0.41      5000
+  weighted avg       0.43      0.43      0.43      5000

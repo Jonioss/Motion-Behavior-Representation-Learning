@@ -1,0 +1,36 @@
+Plotting Test data on UMAP space without labels...
+
+Εκτέλεση K-Means πάνω στον 2D UMAP χώρο του Train set...
+Πρόβλεψη K-Means clusters για το Test set...
+
+Υπολογισμός βέλτιστης αντιστοίχισης (Cluster Alignment) για το Test set...
+
+==================================================
+ΚΑΛΥΤΕΡΗ ΔΥΝΑΤΗ ΑΚΡΙΒΕΙΑ (Test Accuracy): 39.32%
+==================================================
+
+Βέλτιστο Mapping που βρέθηκε:
+  • K-Means Cluster 0  --->  Πραγματικό Label: Speed 4
+  • K-Means Cluster 1  --->  Πραγματικό Label: Speed 1
+  • K-Means Cluster 2  --->  Πραγματικό Label: Speed 2
+  • K-Means Cluster 3  --->  Πραγματικό Label: Speed 3
+  • K-Means Cluster 4  --->  Πραγματικό Label: Speed 0
+
+Αναλυτικό Classification Report (aligned):
+c:\Users\strat\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+c:\Users\strat\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+c:\Users\strat\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+     Speed 4       0.36      0.61      0.46       892
+     Speed 3       0.00      0.00      0.00       606
+     Speed 2       0.58      0.32      0.41      1360
+     Speed 1       0.11      0.50      0.17       418
+     Speed 0       1.00      0.45      0.62      1724
+
+    accuracy                           0.39      5000
+   macro avg       0.41      0.38      0.33      5000
+weighted avg       0.57      0.39      0.42      5000
